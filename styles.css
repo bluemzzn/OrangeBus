@@ -1,0 +1,295 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*== Home ==*/
+nav {
+	background-color: lightcoral;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px;
+
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.nav-con{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+#main {
+	font-family: monospace;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+#main li a{
+	margin: 0 20px;
+	text-decoration: none;
+	color: black;
+	transition: 0.4s ease;
+}
+
+#main a:hover {
+	color: yellow;
+}
+
+#login, .find{
+	background-color: skyblue;
+	border: none;
+	border-radius: 10px;
+	height: 30px;
+	align-content: center;
+}
+
+.second-bar{
+	background-color: steelblue;
+}
+
+.second-bar form .flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 10px 20px;
+	color: white;
+}
+
+.second-bar form .flex .input{
+	width: 100%;
+	font-size: 16px;
+	margin: 5px 0;
+}
+
+.find{
+	width: 100px;
+	font-weight: 600;
+	color: white;
+}
+
+.find:hover{
+	background-color: pink;
+}
+
+.product h2{
+	padding: 10px 10px;
+}
+
+.allpro{
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 20px;
+	flex-wrap: wrap;
+}
+
+.pro-con .pro1{
+	display: flex;
+	width: 100%;
+	min-width: 350px;
+	padding: 10px 15px;
+	border: 1px solid #cce7d0;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+	margin: 20px 10px;
+	transition: 0.2 ease;
+
+}
+
+.pro-con .pro1:hover{
+	box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.06);
+}
+
+.pro1 .detail{
+	width: 100%;
+	font-size: 18px;
+	padding: 10px 10px;
+}
+
+.pro1 .detail span{
+	margin-bottom: 1.5rem;
+}
+
+.book-btn{
+	background-color: limegreen;
+	border: none;
+	border-radius: 10px;
+	height: 30px;
+	width: 80px;
+}
+
+.book-btn:hover{
+	background-color: darkgreen;
+}
+
+
+/*=== Login page ===*/
+.login-grid {
+	background-color: lightgray;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	align-content: center;
+	backdrop-filter: blur(16px);
+	transition: 0.4s;
+}
+
+.login-grid , .login-title, .login-group{
+	padding: 1.25rem;
+}
+
+.login-form{
+	height: 350px;
+	width: 300px;
+	border: 1px gray solid ;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #e1e1e1;
+}
+
+#login-label{
+	display: block;
+	text-align: initial;
+	margin-bottom: 0.25rem;
+}
+
+.login-input{
+	width: 100%;
+	background-color: whitesmoke;
+	padding: 8px;
+	border: none;
+}
+
+
+.signup{
+	display: block;
+	font-size: small;
+}
+
+.signup{
+	margin-bottom: 10px;
+}
+
+.signup a {
+	color: blue;
+	font-weight: 700;
+}
+
+
+#login-close{
+	position: absolute;
+	cursor: pointer;
+	font-size: 1.5rem;
+	top: 2rem;
+	right: 2rem;
+}
+
+.login-button{
+	display: inline-block;
+	color: white;
+	background-color: blue;
+	padding: 10px 15px;
+	border-radius: 10px;
+	border: none;
+	transition: 0.4s;
+	width: 90%;
+	cursor: pointer;
+}
+
+.login-button:hover{
+	background-color: darkblue;
+}	
+
+
+/*=== Cart Page ===*/
+.nav-pass{
+	display: flex;
+	background-color: #e1e1e1;
+	padding: 0 10px;
+	margin-top: 20px;
+	border: 1px gray solid;
+	width: 70%;
+	height: 50px;
+	align-items: center;
+}
+
+/*=== About us page=== */
+.head{
+	padding: 20px 20px;
+	background-image: url(bus.jpg);
+	text-align: center;
+	justify-content: space-between;
+}
+
+.row .text-center{
+	padding: 10px 10px;
+}
+
+.row p{
+	font-weight: 550;
+}
+
+.btn{
+	display: inline-block;
+	text-decoration: none;
+	background-color: blue;
+	border: none;
+	color: white;
+	border-radius: 10px;
+	padding: 10px 10px;
+}
+
+.abt{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 45px;
+}
+
+.icontot{
+	position: relative;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	margin-top: 20px;
+	padding: 0 50px;
+	margin-bottom: 20px;
+}
+
+/* == Footer == */
+.foot {
+	background-color: lightgray;
+	width: 100%;
+	text-align: center;
+	padding: 15px;
+	font-family: monospace;
+}
+
+.foot h1{
+	padding-bottom: 20px;
+	font-size: 30px;
+}
+
+.foot address{
+	font-size: 18px	;
+	margin: 0 10px;
+}
+
+.copyright{
+	text-align: center;
+	color: gray;
+	padding: 10px;
+	width: 100%;
+}
