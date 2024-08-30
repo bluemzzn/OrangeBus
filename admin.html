@@ -4,20 +4,77 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Admin Panel</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
+	<style>
+
+		.nav-ad{
+			display: flex;
+			justify-content: space-between;
+		}
+		#admin {
+			font-family: monospace;
+			list-style: none;
+			display: flex;
+			align-items: center;
+			font-weight: 600;
+			font-size: 16px;
+			justify-content: space-between;
+		}
+
+		#admin li a{
+			color: white;
+			text-decoration: none;
+		}
+
+		.title{
+			margin-top: 15px;
+			font-family: monospace;
+			font-size: 50px;
+		}
+
+		.add-ticket form{
+			border: 1px solid;
+			border-radius: 10px;
+			max-width: 300px;
+			justify-content: space-between;
+			padding: 16px;
+		}
+
+		.add-ticket .box{
+			width: 80%;
+			margin: 10px 0;
+		}
+	</style>
 <body>
 	<nav>
 		<div class="container">
-			<span>AdminPanel</span>
-		</div>
-	</nav>
+			<div class="nav-ad">
+        		<div >
+          			<h2>AdminPanel</h2>
+        		</div>
 
-	<form method="get">
-		<label for="email">Email</label>
-		<input id="email" type="email" placeholder="Write your email" name="email"><br>
-		<label for="pass">Password</label>
-		<input id="pass" type="password" placeholder="Enter your password" name="password"><br>
-		<input type="submit" value="Log in">
-	</form>
+		        <ul id="admin">
+		          <li><a href="index.php">Home</a></li>
+		          <li><a href="cart.html">Cart</a></li>
+		        </ul>
+      		</div>
+        </div>
+	</nav>
+	<section class="add-ticket">
+
+		<center>
+			<h1 class="title">Add Tickets</h1>
+
+		<form method="get" enctype="multipart/form-data">
+			<h3>Add Product</h3>
+			<input type="text" name="name" class="box" placeholder="Enter product regist number" required><br>
+			<input type="date" name="date" class="box" placeholder="Enter product date " required><br>
+			<input type="time" name="time" class="box" placeholder="Enter product time " required><br>
+			<input type="file" accept="image/jpg, image/jpeg, image/png" class="box" required><br>
+			<input type="submit" name="add_ticket" value="add ticket" class="btn">
+		</form>
+		</center>
+	</section>
 </body>
 </html>
