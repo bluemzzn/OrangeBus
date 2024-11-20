@@ -104,20 +104,5 @@
 	</div>
 	</section>
 
-	<footer class="sec1">
-		<div class="foot">
-            <h1>GET IN TOUCH</h1>
-            <address >
-              <strong>SWK, Inc.</strong><br>
-              Muang, Chiang rai,<br>
-              57000, TH<br>
-              <abbr title="Phone">P:</abbr> (+66) 000 000 0000
-            </address>
-        </div>
-
-        <div class="copyright">
-            <p>Copyright © MyCompany. All rights reserved.</p>
-        </div>
-	</footer>
 </body>
 </html>
